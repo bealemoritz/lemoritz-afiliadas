@@ -55,6 +55,10 @@
         <div class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4.5h10v3.5a5 5 0 0 1-10 0z"/><path d="M7 6.5H4.7a2.3 2.3 0 0 0 2.6 2.8M17 6.5h2.3a2.3 2.3 0 0 1-2.6 2.8"/><path d="M12 13v3M9 19.5h6M9.7 19.5l.5-3.5M14.3 19.5l-.5-3.5"/></svg></div>
         <div><h3>Desafio do Mês</h3><span>Crie e ganhe</span></div>
       </button>
+      <button class="nav-card full" data-go="produtos">
+        <div class="emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8l1.5 3.5v13.5H6.5V7z"/><path d="M8 3.5v3.5h8V3.5M9.5 12.5h5"/></svg></div>
+        <div><h3>Nossos produtos</h3><span>O que cada produto entrega + vídeos de referência pra criar</span></div>
+      </button>
     </div>
 
     <!-- Blocos empilhados (ordem definida) -->
@@ -137,6 +141,18 @@
     <div class="banco-frame">
       <iframe id="bancoFrame" src="https://bealemoritz.github.io/banco-de-refs/" loading="lazy" title="Banco de Refs Le Moritz" referrerpolicy="no-referrer"></iframe>
     </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUTOS
+       ============================================================ -->
+  <section class="view" id="produtos" data-view="produtos">
+    <button class="back-btn" data-go="home">‹ Início</button>
+    <p class="eyebrow">Produtos</p>
+    <h1 class="page-title">Conheça a linha Le Moritz</h1>
+    <p class="page-sub">Pra cada produto: a narrativa principal e vídeos de referência que já validamos. Use como base pro seu conteúdo.</p>
+
+    <div id="productsList"><!-- preenchido via JS (CONFIG.products no app.js) --></div>
   </section>
 
   <!-- ============================================================
