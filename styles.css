@@ -465,12 +465,19 @@ a { color: inherit; text-decoration: none; }
   scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
 }
 .product-videos::-webkit-scrollbar { display: none; }
-.video-card { flex: 0 0 340px; scroll-snap-align: start; }
+.video-card { flex: 0 0 132px; scroll-snap-align: start; }
 .video-frame {
   width: 100%; aspect-ratio: 9 / 16; border-radius: 12px; overflow: hidden;
-  background: var(--lilas); box-shadow: var(--shadow);
+  background: var(--lilas); box-shadow: var(--shadow); position: relative;
 }
-.video-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+/* O preview do Google Drive corta o vídeo se renderizar abaixo de ~300px de largura.
+   Por isso o iframe sempre renderiza a 340px (tamanho seguro) e é encolhido visualmente
+   via transform, mantendo o card pequeno sem cortar o vídeo. */
+.video-frame iframe {
+  position: absolute; top: 0; left: 0; border: 0;
+  width: 340px; height: 604.44px;
+  transform: scale(0.38824); transform-origin: top left;
+}
 .video-frame.placeholder {
   display: flex; align-items: center; justify-content: center; text-align: center;
   border: 1.5px dashed var(--borda); box-shadow: none; background: var(--lilas-2);

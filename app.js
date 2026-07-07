@@ -61,15 +61,6 @@ const CONFIG = {
       videos: [
         { drive: "1qLrnSe9JLjXNuI1ht9ULQE1Aq_2qIQu_", titulo: "Ref 1" },
       ],
-      comoUsar: {
-        titulo: "Como usar cada parte do pincel",
-        passos: [
-          "[Confirmar: base ampla, aplicação de pó e blush em movimentos circulares]",
-          "[Confirmar: ponta média retrátil, pra esfumar e uniformizar]",
-          "[Confirmar: ponta fina, pra corretivo e detalhes de precisão]",
-          "[Confirmar: a tampa também é um pincel compacto, uso avulso]",
-        ],
-      },
     },
   ],
 };
