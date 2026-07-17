@@ -14,6 +14,7 @@ const CONFIG = {
 
   // "O que já ensinamos" | mais recente primeiro
   trainings: [
+    { dia: "17", mes: "Jul", titulo: "10 segredos pra vender mais" },
     { dia: "29", mes: "Mai", titulo: "Ganchos que convertem" },
     { dia: "15", mes: "Mai", titulo: "Qualidade no TikTok Shop" },
   ],
