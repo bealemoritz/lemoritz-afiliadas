@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado parcial — Desafio de Agosto | Le Moritz Afiliadas</title>
+<meta name="description" content="Resultado parcial do Desafio de Agosto (Foco nos Sticks) — Le Moritz Afiliadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --creme:        #FAF8F5;
+    --roxo:         #402A57;
+    --roxo-escuro:  #2C1C3D;
+    --roxo-claro:   #6E5191;
+    --lilas:        #EDE8F5;
+    --lilas-2:      #F4F0FA;
+    --grafite:      #1A1A1A;
+    --cinza-txt:    #6B6760;
+    --borda:        #E9E3DA;
+    --branco:       #FFFFFF;
+    --ouro:         #C9A24B;
+
+    --serif: "Fraunces", Georgia, serif;
+    --sans:  "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --max:       480px;
+    --radius:    18px;
+    --radius-sm: 12px;
+    --shadow:    0 4px 24px rgba(84, 58, 120, .08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--creme);
+    color: var(--grafite);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 24px 18px 60px;
+  }
+
+  a { color: var(--roxo); }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--roxo-claro);
+    text-decoration: none;
+    margin-bottom: 18px;
+  }
+  .back-link:hover { color: var(--roxo); }
+
+  /* ---------- Cabeçalho ---------- */
+  header.hero {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--roxo-claro);
+    margin-bottom: 8px;
+  }
+  h1.title {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.12;
+    color: var(--roxo-escuro);
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--ouro);
+    margin-bottom: 8px;
+  }
+  .tagline {
+    font-size: 14px;
+    color: var(--cinza-txt);
+    margin-bottom: 10px;
+  }
+  .period {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--roxo);
+    background: var(--lilas-2);
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
+  .period svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+  /* ---------- Aviso de atualização ---------- */
+  .update-notice {
+    background: var(--lilas);
+    border: 1px solid var(--borda);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    margin: 20px 0;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--roxo-escuro);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .update-notice .ic {
+    flex-shrink: 0;
+    width: 18px; height: 18px;
+    margin-top: 1px;
+    color: var(--roxo);
+  }
+  .update-notice b { color: var(--roxo); }
+
+  /* ---------- Seções ---------- */
+  section { margin: 28px 0; }
+  h2.section-title {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--roxo-escuro);
+    margin-bottom: 12px;
+  }
+
+  /* ---------- Faixas de premiação ---------- */
+  .tier-group { margin-bottom: 16px; }
+  .tier-group-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--cinza-txt);
+    margin-bottom: 8px;
+  }
+  .tier-cards {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .tier-cards::-webkit-scrollbar { display: none; }
+  .tier-card {
+    flex: 0 0 auto;
+    min-width: 76px;
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 10px 8px;
+  }
+  .tier-card .tc-n {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--roxo);
+  }
+  .tier-card .tc-v {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--grafite);
+    margin-top: 2px;
+  }
+  .tier-note {
+    font-size: 12.5px;
+    color: var(--cinza-txt);
+    line-height: 1.5;
+    margin-top: 4px;
+  }
+
+  /* ---------- KPIs ---------- */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .kpi-card {
+    background: var(--roxo);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    padding: 14px 8px;
+    text-align: center;
+  }
+  .kpi-card .kv {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--branco);
+    line-height: 1;
+  }
+  .kpi-card .kl {
+    font-size: 11px;
+    color: var(--lilas-2);
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+
+  /* ---------- Lista de afiliadas ---------- */
+  .aff-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .aff-card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .aff-main {
+    padding: 14px 16px;
+  }
+
+  .aff-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .aff-handle {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--grafite);
+  }
+
+  .aff-badge {
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .aff-badge.has-tier {
+    background: var(--roxo);
+    color: var(--branco);
+  }
+  .aff-badge.no-tier {
+    background: var(--lilas-2);
+    color: var(--cinza-txt);
+    border: 1px solid var(--borda);
+  }
+
+  .aff-count {
+    font-size: 13px;
+    color: var(--cinza-txt);
+    margin-bottom: 8px;
+  }
+  .aff-count b { color: var(--roxo); font-family: var(--serif); font-size: 15px; }
+
+  .progress-track {
+    height: 7px;
+    background: var(--lilas);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--roxo-claro), var(--roxo));
+    border-radius: 999px;
+    transition: width .4s ease;
+  }
+  .progress-fill.maxed { background: var(--ouro); }
+
+  .progress-label {
+    font-size: 12px;
+    color: var(--cinza-txt);
+  }
+
+  .aff-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    background: var(--lilas-2);
+    border: none;
+    border-top: 1px solid var(--borda);
+    padding: 10px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--roxo);
+    cursor: pointer;
+  }
+  .aff-toggle:hover { background: var(--lilas); }
+  .aff-toggle .arrow {
+    display: inline-flex;
+    transition: transform .25s ease;
+    font-size: 11px;
+  }
+  .aff-card.open .aff-toggle .arrow { transform: rotate(180deg); }
+
+  .aff-days {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    background: var(--lilas-2);
+  }
+  .aff-card.open .aff-days { max-height: 300px; }
+
+  .aff-days-inner {
+    padding: 12px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .day-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--grafite);
+    padding: 6px 10px;
+    background: var(--branco);
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+  }
+  .day-row .dd { color: var(--cinza-txt); }
+  .day-row b { font-family: var(--serif); color: var(--roxo); }
+
+  .empty-state {
+    text-align: center;
+    color: var(--cinza-txt);
+    font-size: 13px;
+    padding: 24px 0;
+  }
+
+  footer.foot {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--cinza-txt);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="index.html#desafio">&larr; Voltar pro Desafio de Agosto</a>
+
+  <!-- ============================================================
+       1. CABEÇALHO
+       ============================================================ -->
+  <header class="hero">
+    <p class="eyebrow">RESULTADO PARCIAL do Desafio de Agosto</p>
+    <h1 class="title">Desafio de Agosto</h1>
+    <p class="subtitle">Foco nos Sticks</p>
+    <p class="tagline">Testou, gravou, vendeu!</p>
+    <span class="period">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+      07 a 21/08/2026
+    </span>
+  </header>
+
+  <!-- ============================================================
+       2. AVISO DE ATUALIZAÇÃO
+       (texto vem da constante UPDATE_NOTICE_TEXT no JS, lá embaixo —
+       edite ali a cada nova atualização)
+       ============================================================ -->
+  <div class="update-notice">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+    <span id="updateNoticeText"></span>
+  </div>
+
+  <!-- ============================================================
+       3. RESUMO DO DESAFIO — FAIXAS DE PREMIAÇÃO
+       ============================================================ -->
+  <section>
+    <h2 class="section-title">Faixas de premiação</h2>
+
+    <div class="tier-group">
+      <p class="tier-group-label">Por vídeo de stick postado</p>
+      <div class="tier-cards">
+        <div class="tier-card"><div class="tc-n">10+</div><div class="tc-v">R$100</div></div>
+        <div class="tier-card"><div class="tc-n">25+</div><div class="tc-v">R$300</div></div>
+        <div class="tier-card"><div class="tc-n">45+</div><div class="tc-v">R$600</div></div>
+        <div class="tier-card"><div class="tc-n">65+</div><div class="tc-v">R$1.000</div></div>
+        <div class="tier-card"><div class="tc-n">100+</div><div class="tc-v">R$1.500</div></div>
+      </div>
+    </div>
+
+    <div class="tier-group">
+      <p class="tier-group-label">Bônus por venda de stick</p>
+      <div class="tier-cards">
+        <div class="tier-card"><div class="tc-n">1+</div><div class="tc-v">R$50</div></div>
+        <div class="tier-card"><div class="tc-n">5+</div><div class="tc-v">R$200</div></div>
+        <div class="tier-card"><div class="tc-n">15+</div><div class="tc-v">R$500</div></div>
+        <div class="tier-card"><div class="tc-n">40+</div><div class="tc-v">R$1.500</div></div>
+      </div>
+    </div>
+
+    <p class="tier-note">Vale a maior faixa atingida. Os dois prêmios somam. Vendas ainda não entraram nessa página, vêm do relatório de comissão e são adicionadas depois.</p>
+  </section>
+
+  <!-- ============================================================
+       4. KPIs GERAIS
+       ============================================================ -->
+  <section>
+    <h2 class="section-title">Números do desafio</h2>
+    <div class="kpi-row" id="kpiRow"></div>
+  </section>
+
+  <!-- ============================================================
+       5. LISTA DE AFILIADAS
+       ============================================================ -->
+  <section>
+    <h2 class="section-title">Afiliadas com vídeos postados</h2>
+    <div class="aff-list" id="affList"></div>
+  </section>
+
+  <footer class="foot">Le Moritz Afiliadas &middot; Resultado parcial, sujeito a atualização</footer>
+
+</div>
+
+<script>
+/* =========================================================
+   DADOS DO DESAFIO, atualizar aqui a cada novo relatório
+   ========================================================= */
+
+// Texto do aviso de atualização — edite aqui a cada nova atualização
+const UPDATE_NOTICE_TEXT = "Última atualização: 08/08/2026. O relatório do TikTok Shop sempre demora 2 dias pra ficar disponível, então os vídeos de hoje e de ontem ainda não aparecem aqui.";
+
+// KPIs gerais do topo
+const KPI_DATA = {
+  afiliadasAtivas: 26,
+  videosPostados: 168,
+  jaGarantiramPremio: 6
+};
+
+// Faixas de premiação por vídeo (não mexer nas afiliadas abaixo, é calculado automaticamente)
+const VIDEO_TIERS = [
+  { min: 10,  valor: 100 },
+  { min: 25,  valor: 300 },
+  { min: 45,  valor: 600 },
+  { min: 65,  valor: 1000 },
+  { min: 100, valor: 1500 }
+];
+
+// Lista de afiliadas: total de vídeos + contagem por dia
+const AFFILIATES = [
+  { handle: "paulasimoes87",         total: 29, days: { "07/08": 12, "08/08": 16, "sem data confirmada": 1 } },
+  { handle: "dicasdagiuvrocha",      total: 26, days: { "07/08": 10, "08/08": 16 } },
+  { handle: "priscila.waideman",     total: 18, days: { "07/08": 10, "08/08": 8 } },
+  { handle: "karolaynegomes1708",    total: 16, days: { "07/08": 8,  "08/08": 8 } },
+  { handle: "anacele.silva",         total: 14, days: { "07/08": 13, "08/08": 1 } },
+  { handle: "vanessa.brambillaa",    total: 10, days: { "07/08": 5,  "08/08": 5 } },
+  { handle: "adriana.carvalho.ofc",  total: 8,  days: { "07/08": 8,  "08/08": 0 } },
+  { handle: "melindicou",            total: 8,  days: { "07/08": 4,  "08/08": 4 } },
+  { handle: "thaynaacyoli",          total: 8,  days: { "07/08": 2,  "08/08": 6 } },
+  { handle: "rubiangeloficial",      total: 4,  days: { "07/08": 3,  "08/08": 1 } },
+  { handle: "vcpieroni",             total: 3,  days: { "07/08": 1,  "08/08": 2 } },
+  { handle: "fonseftq2x3",           total: 3,  days: { "07/08": 0,  "08/08": 3 } },
+  { handle: "familiaromeiro",        total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "gleicedicas",           total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "carolina.ribeiro4026",  total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "comprandoeindicando",   total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "cleia.maia.s.leite",    total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "andreia.vantroba",      total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "danigospelstore",       total: 2,  days: { "07/08": 2,  "08/08": 0 } },
+  { handle: "alinedescobriu1",       total: 1,  days: { "07/08": 1,  "08/08": 0 } },
+  { handle: "alinee_creator",        total: 1,  days: { "07/08": 1,  "08/08": 0 } },
+  { handle: "adrianaeboli",          total: 1,  days: { "07/08": 1,  "08/08": 0 } },
+  { handle: "juju.escolhe",          total: 1,  days: { "07/08": 1,  "08/08": 0 } },
+  { handle: "ana01oficial",          total: 1,  days: { "07/08": 1,  "08/08": 0 } },
+  { handle: "mariahtib.creator",     total: 1,  days: { "07/08": 0,  "08/08": 1 } },
+  { handle: "priborgesqueen",        total: 1,  days: { "07/08": 0,  "08/08": 1 } }
+];
+
+/* =========================================================
+   Lógica — não precisa mexer daqui pra baixo
+   ========================================================= */
+
+function fmtBRL(v) {
+  return "R$" + v.toLocaleString("pt-BR");
+}
+
+function getCurrentTier(total) {
+  let tier = null;
+  for (const t of VIDEO_TIERS) if (total >= t.min) tier = t;
+  return tier;
+}
+
+function getNextTier(total) {
+  for (const t of VIDEO_TIERS) if (total < t.min) return t;
+  return null;
+}
+
+function renderKpis() {
+  const el = document.getElementById("kpiRow");
+  el.innerHTML = `
+    <div class="kpi-card"><div class="kv">${KPI_DATA.afiliadasAtivas}</div><div class="kl">afiliadas ativas</div></div>
+    <div class="kpi-card"><div class="kv">${KPI_DATA.videosPostados}</div><div class="kl">vídeos de sticks postados</div></div>
+    <div class="kpi-card"><div class="kv">${KPI_DATA.jaGarantiramPremio}</div><div class="kl">já garantiram prêmio</div></div>
+  `;
+}
+
+function renderAffiliates() {
+  const listEl = document.getElementById("affList");
+  const withVideos = AFFILIATES.filter(a => a.total >= 1).sort((a, b) => b.total - a.total);
+
+  if (withVideos.length === 0) {
+    listEl.innerHTML = '<p class="empty-state">Ainda não temos vídeos registrados.</p>';
+    return;
+  }
+
+  listEl.innerHTML = withVideos.map((a, i) => {
+    const tier = getCurrentTier(a.total);
+    const next = getNextTier(a.total);
+    const badgeHtml = tier
+      ? `<span class="aff-badge has-tier">${fmtBRL(tier.valor)} garantido</span>`
+      : `<span class="aff-badge no-tier">ainda sem faixa</span>`;
+
+    let progressPct, progressLabel, maxedClass = "";
+    if (next) {
+      progressPct = Math.min(100, (a.total / next.min) * 100);
+      progressLabel = `${a.total} de ${next.min} vídeos pra próxima faixa`;
+    } else {
+      progressPct = 100;
+      maxedClass = "maxed";
+      progressLabel = "Faixa máxima atingida!";
+    }
+
+    const dayEntries = Object.entries(a.days)
+      .filter(([, count]) => count > 0)
+      .map(([label, count]) => `
+        <div class="day-row"><span class="dd">${label}</span><b>${count} vídeo${count === 1 ? "" : "s"}</b></div>
+      `).join("");
+
+    return `
+      <div class="aff-card" data-idx="${i}">
+        <div class="aff-main">
+          <div class="aff-top">
+            <span class="aff-handle">@${a.handle}</span>
+            ${badgeHtml}
+          </div>
+          <p class="aff-count"><b>${a.total}</b> vídeo${a.total === 1 ? "" : "s"} de stick postado${a.total === 1 ? "" : "s"}</p>
+          <div class="progress-track"><div class="progress-fill ${maxedClass}" style="width:${progressPct}%"></div></div>
+          <p class="progress-label">${progressLabel}</p>
+        </div>
+        <button class="aff-toggle" type="button" aria-expanded="false">
+          Ver vídeos por dia <span class="arrow">▾</span>
+        </button>
+        <div class="aff-days">
+          <div class="aff-days-inner">${dayEntries}</div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  listEl.querySelectorAll(".aff-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".aff-card");
+      const isOpen = card.classList.toggle("open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  });
+}
+
+document.getElementById("updateNoticeText").textContent = UPDATE_NOTICE_TEXT;
+renderKpis();
+renderAffiliates();
+</script>
+</body>
+</html>
