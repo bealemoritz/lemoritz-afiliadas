@@ -441,13 +441,13 @@
    ========================================================= */
 
 // Texto do aviso de atualização — edite aqui a cada nova atualização
-const UPDATE_NOTICE_TEXT = "Última atualização: 09/08/2026. O relatório do TikTok Shop sempre demora 2 dias pra ficar disponível, então os vídeos de hoje e de ontem ainda não aparecem aqui.";
+const UPDATE_NOTICE_TEXT = "Última atualização: 10/08/2026. O relatório do TikTok Shop sempre demora 2 dias pra ficar disponível, então os vídeos de hoje e de ontem ainda não aparecem aqui.";
 
 // KPIs gerais do topo
 const KPI_DATA = {
-  afiliadasAtivas: 35,
-  videosPostados: 257,
-  jaGarantiramPremio: 9
+  afiliadasAtivas: 40,
+  videosPostados: 368,
+  jaGarantiramPremio: 11
 };
 
 // Faixas de premiação por vídeo (não mexer nas afiliadas abaixo, é calculado automaticamente)
@@ -461,41 +461,46 @@ const VIDEO_TIERS = [
 
 // Lista de afiliadas: total de vídeos + contagem por dia
 const AFFILIATES = [
-  { handle: "paulasimoes87",         total: 42, days: { "07/08": 12, "08/08": 16, "09/08": 13, "sem data confirmada": 1 } },
-  { handle: "dicasdagiuvrocha",      total: 40, days: { "07/08": 10, "08/08": 16, "09/08": 14 } },
-  { handle: "karolaynegomes1708",    total: 24, days: { "07/08": 8,  "08/08": 8,  "09/08": 8 } },
-  { handle: "anacele.silva",         total: 20, days: { "07/08": 13, "08/08": 1,  "09/08": 6 } },
-  { handle: "priscila.waideman",     total: 20, days: { "07/08": 10, "08/08": 8,  "09/08": 2 } },
-  { handle: "thaynaacyoli",          total: 18, days: { "07/08": 2,  "08/08": 6,  "09/08": 10 } },
-  { handle: "vanessa.brambillaa",    total: 14, days: { "07/08": 5,  "08/08": 5,  "09/08": 4 } },
-  { handle: "melindicou",            total: 13, days: { "07/08": 4,  "08/08": 4,  "09/08": 5 } },
-  { handle: "adriana.carvalho.ofc",  total: 10, days: { "07/08": 8,  "08/08": 0,  "09/08": 2 } },
-  { handle: "fonseftq2x3",           total: 7,  days: { "07/08": 0,  "08/08": 3,  "09/08": 4 } },
-  { handle: "juju.escolhe",          total: 6,  days: { "07/08": 1,  "08/08": 0,  "09/08": 5 } },
-  { handle: "vcpieroni",             total: 4,  days: { "07/08": 1,  "08/08": 2,  "09/08": 1 } },
-  { handle: "rubiangeloficial",      total: 4,  days: { "07/08": 3,  "08/08": 1,  "09/08": 0 } },
-  { handle: "andreia.vantroba",      total: 3,  days: { "07/08": 2,  "08/08": 0,  "09/08": 1 } },
-  { handle: "eridianebarbosaro",     total: 3,  days: { "07/08": 0,  "08/08": 0,  "09/08": 3 } },
-  { handle: "drimartin50",           total: 3,  days: { "07/08": 2,  "08/08": 0,  "09/08": 1 } },
-  { handle: "wendyquinarinails",     total: 2,  days: { "07/08": 0,  "08/08": 0,  "09/08": 2 } },
-  { handle: "familiaromeiro",        total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "gleicedicas",           total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "carolina.ribeiro4026",  total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "comprandoeindicando",   total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "cleia.maia.s.leite",    total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "danigospelstore",       total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0 } },
-  { handle: "alinedescobriu1",       total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0 } },
-  { handle: "alinee_creator",        total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0 } },
-  { handle: "adrianaeboli",          total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0 } },
-  { handle: "ana01oficial",          total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0 } },
-  { handle: "mariahtib.creator",     total: 1,  days: { "07/08": 0,  "08/08": 1,  "09/08": 0 } },
-  { handle: "priborgesqueen",        total: 1,  days: { "07/08": 0,  "08/08": 1,  "09/08": 0 } },
-  { handle: "paulagibramt",          total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } },
-  { handle: "_lindianelima",         total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } },
-  { handle: "sheilinhamichele",      total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } },
-  { handle: "genitanovais25",        total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } },
-  { handle: "dicasdakamazagao",      total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } },
-  { handle: "regianecamacho",        total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1 } }
+  { handle: "paulasimoes87",         total: 58, days: { "07/08": 12, "08/08": 16, "09/08": 13, "10/08": 17 } },
+  { handle: "dicasdagiuvrocha",      total: 54, days: { "07/08": 10, "08/08": 16, "09/08": 14, "10/08": 14 } },
+  { handle: "karolaynegomes1708",    total: 32, days: { "07/08": 8,  "08/08": 8,  "09/08": 8,  "10/08": 8 } },
+  { handle: "priscila.waideman",     total: 27, days: { "07/08": 10, "08/08": 8,  "09/08": 2,  "10/08": 7 } },
+  { handle: "anacele.silva",         total: 25, days: { "07/08": 13, "08/08": 1,  "09/08": 6,  "10/08": 5 } },
+  { handle: "vanessa.brambillaa",    total: 19, days: { "07/08": 5,  "08/08": 5,  "09/08": 4,  "10/08": 5 } },
+  { handle: "thaynaacyoli",          total: 19, days: { "07/08": 2,  "08/08": 6,  "09/08": 10, "10/08": 1 } },
+  { handle: "adriana.carvalho.ofc",  total: 16, days: { "07/08": 8,  "08/08": 0,  "09/08": 2,  "10/08": 6 } },
+  { handle: "melindicou",            total: 13, days: { "07/08": 4,  "08/08": 4,  "09/08": 5,  "10/08": 0 } },
+  { handle: "alinecarvalho_shop",    total: 13, days: { "07/08": 0,  "08/08": 0,  "09/08": 0,  "10/08": 13 } },
+  { handle: "wendyquinarinails",     total: 11, days: { "07/08": 0,  "08/08": 0,  "09/08": 2,  "10/08": 9 } },
+  { handle: "juju.escolhe",          total: 8,  days: { "07/08": 1,  "08/08": 0,  "09/08": 5,  "10/08": 2 } },
+  { handle: "fonseftq2x3",           total: 7,  days: { "07/08": 0,  "08/08": 3,  "09/08": 3,  "10/08": 1 } },
+  { handle: "vcpieroni",             total: 5,  days: { "07/08": 1,  "08/08": 2,  "09/08": 1,  "10/08": 1 } },
+  { handle: "drimartin50",           total: 5,  days: { "07/08": 2,  "08/08": 0,  "09/08": 1,  "10/08": 2 } },
+  { handle: "andreia.vantroba",      total: 5,  days: { "07/08": 2,  "08/08": 0,  "09/08": 1,  "10/08": 2 } },
+  { handle: "familiaromeiro",        total: 4,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 2 } },
+  { handle: "rubiangeloficial",      total: 4,  days: { "07/08": 3,  "08/08": 1,  "09/08": 0,  "10/08": 0 } },
+  { handle: "genitanovais25",        total: 4,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 3 } },
+  { handle: "dicasdakamazagao",      total: 4,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 3 } },
+  { handle: "gabi.voit",             total: 4,  days: { "07/08": 0,  "08/08": 0,  "09/08": 0,  "10/08": 4 } },
+  { handle: "cleia.maia.s.leite",    total: 3,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 1 } },
+  { handle: "eridianebarbosaro",     total: 3,  days: { "07/08": 0,  "08/08": 0,  "09/08": 3,  "10/08": 0 } },
+  { handle: "regianecamacho",        total: 3,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 2 } },
+  { handle: "gleicedicas",           total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "carolina.ribeiro4026",  total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "comprandoeindicando",   total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "danigospelstore",       total: 2,  days: { "07/08": 2,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "vivianschatz",          total: 2,  days: { "07/08": 0,  "08/08": 0,  "09/08": 0,  "10/08": 2 } },
+  { handle: "karollynaazevedoo",     total: 2,  days: { "07/08": 0,  "08/08": 0,  "09/08": 0,  "10/08": 2 } },
+  { handle: "alinedescobriu1",       total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "alinee_creator",        total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "adrianaeboli",          total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "ana01oficial",          total: 1,  days: { "07/08": 1,  "08/08": 0,  "09/08": 0,  "10/08": 0 } },
+  { handle: "mariahtib.creator",     total: 1,  days: { "07/08": 0,  "08/08": 1,  "09/08": 0,  "10/08": 0 } },
+  { handle: "priborgesqueen",        total: 1,  days: { "07/08": 0,  "08/08": 1,  "09/08": 0,  "10/08": 0 } },
+  { handle: "paulagibramt",          total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 0 } },
+  { handle: "_lindianelima",         total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 0 } },
+  { handle: "sheilinhamichele",      total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 1,  "10/08": 0 } },
+  { handle: "thalitaliiima",         total: 1,  days: { "07/08": 0,  "08/08": 0,  "09/08": 0,  "10/08": 1 } }
 ];
 
 /* =========================================================
