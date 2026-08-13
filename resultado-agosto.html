@@ -168,8 +168,8 @@
     padding: 7px 3px;
   }
   .tier-card .tc-n {
-    font-family: var(--serif);
-    font-weight: 700;
+    font-family: var(--sans);
+    font-weight: 800;
     font-size: 13px;
     color: var(--roxo);
     white-space: nowrap;
@@ -239,9 +239,9 @@
   }
 
   .aff-handle {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: 16px;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 15.5px;
     color: var(--grafite);
   }
 
@@ -268,7 +268,7 @@
     color: var(--cinza-txt);
     margin-bottom: 8px;
   }
-  .aff-count b { color: var(--roxo); font-family: var(--serif); font-size: 15px; }
+  .aff-count b { color: var(--roxo); font-family: var(--sans); font-weight: 800; font-size: 15px; }
 
   .progress-track {
     height: 7px;
@@ -339,7 +339,7 @@
     border: 1px solid var(--borda);
   }
   .day-row .dd { color: var(--cinza-txt); }
-  .day-row b { font-family: var(--serif); color: var(--roxo); }
+  .day-row b { font-family: var(--sans); font-weight: 700; color: var(--roxo); }
 
   .empty-state {
     text-align: center;
@@ -386,7 +386,15 @@
   </div>
 
   <!-- ============================================================
-       3. RESUMO DO DESAFIO — FAIXAS DE PREMIAÇÃO
+       3. KPIs GERAIS (resultado parcial)
+       ============================================================ -->
+  <section>
+    <h2 class="section-title">Números do desafio</h2>
+    <div class="kpi-row" id="kpiRow"></div>
+  </section>
+
+  <!-- ============================================================
+       4. RESUMO DO DESAFIO — FAIXAS DE PREMIAÇÃO
        ============================================================ -->
   <section>
     <h2 class="section-title">Faixas de premiação</h2>
@@ -413,14 +421,6 @@
     </div>
 
     <p class="tier-note">Vale a maior faixa atingida. Os dois prêmios somam. Vendas ainda não entraram nessa página, vêm do relatório de comissão e são adicionadas depois.</p>
-  </section>
-
-  <!-- ============================================================
-       4. KPIs GERAIS
-       ============================================================ -->
-  <section>
-    <h2 class="section-title">Números do desafio</h2>
-    <div class="kpi-row" id="kpiRow"></div>
   </section>
 
   <!-- ============================================================
