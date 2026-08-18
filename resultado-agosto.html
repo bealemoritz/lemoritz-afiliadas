@@ -316,24 +316,6 @@
     border: 1px solid var(--borda);
   }
 
-  .validation-tag {
-    display: inline-block;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: var(--cinza-txt);
-    background: var(--lilas-2);
-    border: 1px solid var(--borda);
-    border-radius: 999px;
-    padding: 2px 7px;
-    white-space: nowrap;
-  }
-  .aff-top-tag {
-    display: flex;
-    justify-content: flex-end;
-    margin: -4px 0 8px;
-  }
-
   .aff-count {
     font-size: 13px;
     color: var(--cinza-txt);
@@ -659,7 +641,7 @@ function renderKpis() {
   el.innerHTML = `
     <div class="kpi-card"><div class="kv">${KPI_DATA.afiliadasAtivas.toLocaleString("pt-BR")}</div><div class="kl">afiliadas ativas</div></div>
     <div class="kpi-card"><div class="kv">${KPI_DATA.videosPostados.toLocaleString("pt-BR")}</div><div class="kl">vídeos de sticks postados</div></div>
-    <div class="kpi-card"><div class="kv">${KPI_DATA.jaGarantiramPremio.toLocaleString("pt-BR")}</div><div class="kl">já garantiram prêmio</div></div>
+    <div class="kpi-card"><div class="kv">${KPI_DATA.jaGarantiramPremio.toLocaleString("pt-BR")}</div><div class="kl">já atingiram alguma faixa</div></div>
   `;
 }
 
@@ -702,7 +684,6 @@ function renderAffiliates() {
             <span class="aff-handle">@${a.handle}</span>
             ${badgeHtml}
           </div>
-          ${tier ? '<div class="aff-top-tag"><span class="validation-tag">sujeito a validação</span></div>' : ''}
           <p class="aff-count"><b>${a.total}</b> vídeo${a.total === 1 ? "" : "s"} de stick postado${a.total === 1 ? "" : "s"}</p>
           <div class="progress-track"><div class="progress-fill ${maxedClass}" style="width:${progressPct}%"></div></div>
           <p class="progress-label">${progressLabel}</p>
