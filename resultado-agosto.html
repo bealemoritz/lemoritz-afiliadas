@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resultado parcial — Desafio de Agosto | Le Moritz Afiliadas</title>
-<meta name="description" content="Resultado parcial do Desafio de Agosto (Foco nos Sticks) — Le Moritz Afiliadas.">
+<title>Resultado final — Desafio de Agosto | Le Moritz Afiliadas</title>
+<meta name="description" content="Resultado final do Desafio de Agosto (Foco nos Sticks) — Le Moritz Afiliadas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -194,28 +194,6 @@
     color: var(--grafite);
   }
 
-  /* ---------- Aviso de atualização ---------- */
-  .update-notice {
-    background: var(--lilas);
-    border: 1px solid var(--borda);
-    border-radius: var(--radius-sm);
-    padding: 14px 16px;
-    margin: 20px 0;
-    font-size: 13.5px;
-    line-height: 1.5;
-    color: var(--roxo-escuro);
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
-  .update-notice .ic {
-    flex-shrink: 0;
-    width: 18px; height: 18px;
-    margin-top: 1px;
-    color: var(--roxo);
-  }
-  .update-notice b { color: var(--roxo); }
-
   /* ---------- Seções ---------- */
   section { margin: 28px 0; }
   h2.section-title {
@@ -274,7 +252,7 @@
   /* ---------- KPIs ---------- */
   .kpi-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
   .kpi-card {
@@ -287,12 +265,12 @@
   .kpi-card .kv {
     font-family: var(--serif);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
     color: var(--branco);
     line-height: 1;
   }
   .kpi-card .kl {
-    font-size: 11px;
+    font-size: 11.5px;
     color: var(--lilas-2);
     margin-top: 6px;
     line-height: 1.3;
@@ -371,6 +349,20 @@
   .progress-label {
     font-size: 12px;
     color: var(--cinza-txt);
+  }
+
+  .aff-sale {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--borda);
+    font-size: 12.5px;
+    color: var(--cinza-txt);
+  }
+  .aff-sale.has-sale { color: var(--grafite); }
+  .aff-sale .amt {
+    font-family: var(--sans);
+    font-weight: 800;
+    color: var(--roxo);
   }
 
   .aff-toggle {
@@ -473,24 +465,14 @@
     <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
     <div>
       <b>Desafio encerrado</b>
-      <p>O período do desafio terminou em 21/08. Os números desta página já são o total final apurado pelo TikTok Shop, mas os prêmios definitivos dependem da conferência manual de cada vídeo antes do pagamento.</p>
+      <p>O período foi de 07 a 21/08/2026. Os números desta página são o total final apurado pelo TikTok Shop, já aprovados para pagamento. <b style="font-family:var(--sans);">Pagamento até o dia 10, via Pix.</b> Não contam vídeos feitos com IA nem vídeos que só mostram o produto sem a afiliada aparecendo de verdade.</p>
     </div>
   </div>
 
   <!-- ============================================================
-       2. AVISO DE ATUALIZAÇÃO
-       (texto vem da constante UPDATE_NOTICE_TEXT no JS, lá embaixo —
-       edite ali a cada nova atualização)
+       3. KPIs GERAIS (resultado final)
        ============================================================ -->
-  <div class="update-notice">
-    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
-    <span id="updateNoticeText"></span>
-  </div>
-
-  <!-- ============================================================
-       3. KPIs GERAIS (resultado parcial)
-       ============================================================ -->
-  <p class="eyebrow" style="text-align:center;margin-top:24px;">RESULTADO PARCIAL do Desafio de Agosto</p>
+  <p class="eyebrow" style="text-align:center;margin-top:24px;">RESULTADO FINAL do Desafio de Agosto</p>
   <section>
     <h2 class="section-title">Números do desafio</h2>
     <div class="kpi-row" id="kpiRow"></div>
@@ -523,7 +505,7 @@
       </div>
     </div>
 
-    <p class="tier-note">Vale a maior faixa atingida. Os dois prêmios somam. Vendas ainda não entraram nessa página, vêm do relatório de comissão e são adicionadas depois. Valores sujeitos a validação individual.</p>
+    <p class="tier-note">Vale a maior faixa atingida. Os dois prêmios somam. Valores já aprovados para pagamento.</p>
   </section>
 
   <!-- ============================================================
@@ -534,7 +516,7 @@
     <div class="aff-list" id="affList"></div>
   </section>
 
-  <footer class="foot">Le Moritz Afiliadas &middot; Resultado parcial, sujeito a atualização</footer>
+  <footer class="foot">Le Moritz Afiliadas &middot; Resultado final, desafio encerrado</footer>
 
 </div>
 
@@ -564,17 +546,15 @@
 
 <script>
 /* =========================================================
-   DADOS DO DESAFIO, atualizar aqui a cada novo relatório
+   DADOS DO DESAFIO (resultado final — encerrado em 21/08/2026)
    ========================================================= */
-
-// Texto do aviso de atualização — edite aqui a cada nova atualização
-const UPDATE_NOTICE_TEXT = "Última atualização: 21/08/2026, desafio encerrado. Os números de vídeo já são o total final apurado pelo TikTok Shop. Os valores de prêmio aqui são uma prévia baseada nesse relatório automático. Antes do pagamento, cada vídeo passa por conferência humana individual. Não contam vídeos feitos com IA nem vídeos que só mostram o produto sem a afiliada aparecendo de verdade.";
 
 // KPIs gerais do topo
 const KPI_DATA = {
   afiliadasAtivas: 82,
   videosPostados: 3025,
-  jaGarantiramPremio: 34
+  premiadasPorVideo: 34,
+  premiadasPorVenda: 5
 };
 
 // Faixas de premiação por vídeo (não mexer nas afiliadas abaixo, é calculado automaticamente)
@@ -585,6 +565,23 @@ const VIDEO_TIERS = [
   { min: 65,  valor: 1000 },
   { min: 100, valor: 1500 }
 ];
+
+// Faixas de bônus por venda (calculado automaticamente a partir de VENDAS_DATA)
+const SALE_TIERS = [
+  { min: 1,  valor: 50 },
+  { min: 5,  valor: 200 },
+  { min: 15, valor: 500 },
+  { min: 40, valor: 1500 }
+];
+
+// Vendas de stick no período por afiliada — handles fora daqui têm 0 vendas
+const VENDAS_DATA = {
+  "alinecarvalho_shop":    1,
+  "karolaynegomes1708":    2,
+  "edelirsantos":          1,
+  "genitanovais25":        2,
+  "drimartin50":           1
+};
 
 // Lista de afiliadas: total de vídeos + contagem por dia
 const AFFILIATES = [
@@ -691,12 +688,19 @@ function getNextTier(total) {
   return null;
 }
 
+function getCurrentSaleTier(vendas) {
+  let tier = null;
+  for (const t of SALE_TIERS) if (vendas >= t.min) tier = t;
+  return tier;
+}
+
 function renderKpis() {
   const el = document.getElementById("kpiRow");
   el.innerHTML = `
     <div class="kpi-card"><div class="kv">${KPI_DATA.afiliadasAtivas.toLocaleString("pt-BR")}</div><div class="kl">afiliadas ativas</div></div>
     <div class="kpi-card"><div class="kv">${KPI_DATA.videosPostados.toLocaleString("pt-BR")}</div><div class="kl">vídeos de sticks postados</div></div>
-    <div class="kpi-card"><div class="kv">${KPI_DATA.jaGarantiramPremio.toLocaleString("pt-BR")}</div><div class="kl">já atingiram alguma faixa</div></div>
+    <div class="kpi-card"><div class="kv">${KPI_DATA.premiadasPorVideo.toLocaleString("pt-BR")}</div><div class="kl">premiadas por vídeo</div></div>
+    <div class="kpi-card"><div class="kv">${KPI_DATA.premiadasPorVenda.toLocaleString("pt-BR")}</div><div class="kl">premiadas por venda</div></div>
   `;
 }
 
@@ -713,8 +717,14 @@ function renderAffiliates() {
     const tier = getCurrentTier(a.total);
     const next = getNextTier(a.total);
     const badgeHtml = tier
-      ? `<span class="aff-badge has-tier">${fmtBRL(tier.valor)} previsto</span>`
-      : `<span class="aff-badge no-tier">ainda sem faixa</span>`;
+      ? `<span class="aff-badge has-tier">${fmtBRL(tier.valor)} aprovado</span>`
+      : `<span class="aff-badge no-tier">sem faixa</span>`;
+
+    const vendas = VENDAS_DATA[a.handle] || 0;
+    const saleTier = getCurrentSaleTier(vendas);
+    const saleHtml = saleTier
+      ? `<div class="aff-sale has-sale">Bônus por venda: <span class="amt">${fmtBRL(saleTier.valor)}</span> (${vendas} venda${vendas === 1 ? "" : "s"})</div>`
+      : `<div class="aff-sale">Bônus por venda: sem venda no período</div>`;
 
     let progressPct, progressLabel, maxedClass = "";
     if (next) {
@@ -742,6 +752,7 @@ function renderAffiliates() {
           <p class="aff-count"><b>${a.total}</b> vídeo${a.total === 1 ? "" : "s"} de stick postado${a.total === 1 ? "" : "s"}</p>
           <div class="progress-track"><div class="progress-fill ${maxedClass}" style="width:${progressPct}%"></div></div>
           <p class="progress-label">${progressLabel}</p>
+          ${saleHtml}
         </div>
         <button class="aff-toggle" type="button" aria-expanded="false">
           Ver vídeos por dia <span class="arrow">▾</span>
@@ -762,7 +773,6 @@ function renderAffiliates() {
   });
 }
 
-document.getElementById("updateNoticeText").textContent = UPDATE_NOTICE_TEXT;
 renderKpis();
 renderAffiliates();
 </script>
