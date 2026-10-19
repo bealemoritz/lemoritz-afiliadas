@@ -8,7 +8,7 @@
 <meta name="description" content="Portal das criadoras Le Moritz: banco de referências, treinamentos, desafios e benefícios.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,11 +27,13 @@
        ============================================================ -->
   <section class="view active" id="home" data-view="home">
 
-    <!-- Banner sutil do desafio (leva pra aba Desafio) -->
-    <a class="promo-bar" data-go="desafio" href="#desafio">
-      <span class="promo-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4.5h10v3.5a5 5 0 0 1-10 0z"/><path d="M7 6.5H4.7a2.3 2.3 0 0 0 2.6 2.8M17 6.5h2.3a2.3 2.3 0 0 1-2.6 2.8"/><path d="M12 13v3M9 19.5h6M9.7 19.5l.5-3.5M14.3 19.5l-.5-3.5"/></svg></span>
-      <span class="promo-txt">Participe dos <b>Desafios de Setembro</b></span>
-      <span class="promo-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+    <!-- Banner da Black November Awards (leva pra aba Desafio) -->
+    <a class="black-banner" data-go="desafio" href="#desafio" aria-label="Black November Awards: de 16/10 a 27/11. O desafio 1 de 3 já começou. Toque pra participar.">
+      <span class="bb-dates">16/10 a 27/11</span>
+      <span class="bb-title"><b>Black</b> <em>November</em> <b>Awards</b></span>
+      <span class="bb-sub">São 3 desafios em 3 fases. O <b>desafio 1 já começou!</b></span>
+      <span class="bb-steps"><i class="on"></i><i></i><i></i><small>Desafio 1 de 3</small></span>
+      <span class="bb-cta">Quero participar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
     </a>
 
     <p class="eyebrow">Le Moritz | Afiliadas</p>
@@ -201,90 +203,134 @@
   <section class="view" id="desafio" data-view="desafio">
     <button class="back-btn" data-go="home">‹ Início</button>
     <p class="eyebrow">Desafio do Mês</p>
-    <h1 class="page-title" style="margin-bottom:6px">Desafios de Setembro</h1>
-    <p class="page-sub" style="margin-bottom:24px">Dois desafios rolando ao mesmo tempo esse mês. Você pode participar dos dois!</p>
+    <h1 class="page-title" style="margin-bottom:6px">Black November Awards</h1>
+    <p class="page-sub" style="margin-bottom:18px">A Black começou! São 3 desafios em 3 fases pra você ganhar. E o <b>desafio 1 já está liberado</b>.</p>
 
-    <!-- ===== ATIVO 1: A pele de quem eu amo (estendido) ===== -->
+    <div class="black-phases">
+      <div class="black-phase active"><small>Fase 1</small><b>Esquenta Black</b><span>16/10 a 31/10</span><i>Liberada</i></div>
+      <div class="black-phase"><small>Fase 2</small><b>Mês Black</b><span>01/11 a 19/11</span><i>Em breve</i></div>
+      <div class="black-phase"><small>Fase 3</small><b>Semana Black</b><span>20/11 a 27/11</span><i>Em breve</i></div>
+    </div>
+
+    <!-- ===== ATIVO: Desafio 1, Esquenta Black ===== -->
     <p class="challenge-status">Ativo</p>
-    <h2 class="page-title" style="font-size:26px;margin-bottom:6px">A pele de quem eu amo</h2>
-    <p class="page-sub" style="margin-bottom:14px">Mostre o efeito do nosso <b>Sérum Lifting</b> em quem você ama e venda COM esses vídeos. O ranking soma as vendas geradas pelos seus vídeos com a hashtag.</p>
+    <h2 class="page-title" style="font-size:26px;margin-bottom:6px">Desafio 1: foco em volume</h2>
+    <p class="page-sub" style="margin-bottom:14px">Esquenta Black. Os produtos do desafio são o <b>Sérum Lifting Instantâneo</b> e o <b>Stick Hidratante Reparador para Pés</b>. Bata as duas metas de vídeos pra subir de faixa e ainda ganhe <b>R$ 10 de bônus por cada stick pés vendido</b> no período.</p>
 
     <p class="challenge-period">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
-      18 a 30 de setembro
-      <span style="color:var(--ouro);font-weight:800;letter-spacing:.04em;">· estendido até 07/10</span>
+      16 a 31 de outubro de 2026
     </p>
 
-    <a class="challenge-poster" href="assets/desafio-pele.jpg" target="_blank" rel="noopener" aria-label="Abrir a arte do desafio A pele de quem eu amo em tamanho grande">
-      <img src="assets/desafio-pele.jpg" alt="Desafio A pele de quem eu amo, Le Moritz: ranking de vendas por vídeos com a hashtag #APeleDeQuemEuAmo, de 18 a 30 de setembro de 2026 (estendido até 07/10). Prêmios: 1º R$3.000, 2º R$2.000, 3º R$1.500, 4º R$1.000, 5º R$800." loading="lazy">
+    <a class="challenge-poster" href="assets/desafio-esquenta-black.webp" target="_blank" rel="noopener" aria-label="Abrir a arte do Desafio 1 da Black November Awards em tamanho grande">
+      <img src="assets/desafio-esquenta-black.webp" alt="Black November Awards, Desafio 1 foco em volume (Sérum Lifting Instantâneo e Stick pés), de 16/10 a 31/10: 10 vídeos do stick pés + 5 do sérum R$100, 20 + 10 R$250, 30 + 15 R$400, 40 + 20 R$600, mais R$10 de bônus para cada stick pés vendido no período." loading="lazy">
     </a>
 
-    <p class="eyebrow" style="margin-top:26px">Como participar</p>
-    <p class="page-sub" style="margin-bottom:10px">Grave vídeos aplicando o Sérum Lifting em alguém mais velho (mãe, avó, sogra, tia, amiga 40+):</p>
+    <p class="eyebrow" style="margin-top:26px">Regras: vídeos</p>
     <ul class="rules-list">
-      <li>Aplique só em um lado do rosto (antes e depois no mesmo vídeo).</li>
-      <li>Reação genuína, sem efeito e com boa luz.</li>
-      <li>Feche com um convite pra compra (seu link).</li>
+      <li>Para subir de faixa, bata as duas metas: stick pés e sérum.</li>
+      <li>Marque só 1 produto na sacolinha por vídeo. Ele define a meta em que o vídeo conta e precisa combinar com o conteúdo.</li>
+      <li>Apareça aplicando: stick nos pés, sérum no rosto (em você ou em outra pessoa). Só segurar ou mostrar o produto não vale.</li>
+      <li>Não valem vídeos repostados ou duplicados, nem feitos com IA que recria pessoas. Queremos vídeos reais.</li>
+      <li>Mantenha os vídeos no ar até o pagamento. Vídeo apagado não conta.</li>
     </ul>
 
-    <p class="eyebrow" style="margin-top:22px">Como conta</p>
-    <p class="page-sub" style="margin-bottom:0">O ranking soma as vendas geradas pelos vídeos com a hashtag. Não é vender por fora: é vender COM os vídeos.</p>
-
-    <p class="eyebrow" style="margin-top:22px">Dica de ouro</p>
-    <p class="page-sub" style="margin-bottom:0">Grave com pessoas com bastante linhas de expressão: o efeito fica mais visível e vende mais.</p>
-
-    <p class="eyebrow" style="margin-top:22px">Regras</p>
+    <p class="eyebrow" style="margin-top:22px">Regras: vendas (bônus stick pés)</p>
     <ul class="rules-list">
-      <li>Só vídeos de 18 a 30/09.</li>
-      <li>Sempre com <b>#APeleDeQuemEuAmo</b> (sem ela não vale).</li>
-      <li>Aplicar em outra pessoa, não em você.</li>
-      <li>Marque <b>@lemoritz</b> e use seu link.</li>
-      <li>Mínimo de 4 vídeos pra concorrer.</li>
-      <li>Empate no ranking: quem tiver mais vendas.</li>
+      <li>Só contam vendas aprovadas, sem cancelamento ou reembolso.</li>
+      <li>Só valem vendas de vídeos postados de 16/10 a 31/10.</li>
     </ul>
 
-    <p class="eyebrow" style="margin-top:22px">Prêmios de conteúdo <span style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--cinza-txt)">(todas concorrem)</span></p>
+    <p class="eyebrow" style="margin-top:22px">Premiações</p>
     <ul class="rules-list">
-      <li>Melhor Transformação: R$ 500.</li>
-      <li>Vídeo Viral (+50 mil views): R$ 500.</li>
+      <li>As faixas não acumulam: vale a maior atingida.</li>
+      <li>O bônus do stick pés soma por fora. A Le Moritz pode pedir prints de insights e de vendas para validar.</li>
+      <li>Pagamento via Pix em 10/11.</li>
     </ul>
 
-    <p class="challenge-note">Participe pelo nosso <a data-wpp href="#" target="_blank" rel="noopener">grupo do WhatsApp</a>: é por lá que a gente valida os vídeos e divulga o resultado.</p>
+    <p class="challenge-note"><b>Um único vídeo com estratégia, resultado e experiência real pode render 10x mais comissão que o prêmio. Capriche!</b></p>
 
-    <hr class="section-divider" style="margin:34px 0">
-
-    <!-- ===== ATIVO 2: Foco em vendas ===== -->
-    <p class="challenge-status">Ativo</p>
-    <h2 class="page-title" style="font-size:26px;margin-bottom:6px">Foco em vendas</h2>
-    <p class="page-sub" style="margin-bottom:14px">O ranking é por quantidade de unidades vendidas: as <b>3 afiliadas que mais venderem</b> no período levam um kit completo Le Moritz (R$ 1.694 em produtos cada). Valem as vendas que vierem tanto de <b>vídeos</b> quanto de <b>lives</b>, desde que o conteúdo tenha sido produzido e tenha gerado a venda dentro do período do desafio.</p>
-
-    <p class="challenge-period">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
-      14 a 30 de setembro de 2026
-    </p>
-
-    <a class="challenge-poster" href="assets/desafio-setembro.jpg" target="_blank" rel="noopener" aria-label="Abrir a arte do desafio Foco em vendas em tamanho grande">
-      <img src="assets/desafio-setembro.jpg" alt="Desafio de Setembro Le Moritz, foco em vendas: as 3 afiliadas que mais venderem de 14 a 30 de setembro de 2026 levam um kit completo, no valor de R$ 1.694 em produtos cada." loading="lazy">
-    </a>
-
-    <p class="eyebrow" style="margin-top:26px">Como funciona</p>
-    <ul class="rules-list">
-      <li>Ranking pela quantidade de unidades vendidas: vale qualquer produto.</li>
-      <li>Valem as vendas de vídeos e de lives, desde que o conteúdo tenha sido produzido de 14 a 30/09. Conteúdos antigos não entram.</li>
-      <li>A venda precisa estar paga e confirmada até 23h59 do dia 30/09.</li>
-      <li>Vendas canceladas ou devolvidas são descontadas do total.</li>
-      <li>Todas as afiliadas do grupo entram automaticamente, sem inscrição.</li>
-      <li>Apuração pelo painel oficial do TikTok Shop. Autocompra desclassifica.</li>
-    </ul>
-
-    <p class="challenge-note"><b>Empate?</b> Ganha quem vendeu mais sérum, nosso carro-chefe. Persistindo, quem chegou ao número primeiro.</p>
-
-    <p class="challenge-note">Todas as afiliadas do grupo já estão participando. Fica de olho no nosso <a data-wpp href="#" target="_blank" rel="noopener">grupo do WhatsApp</a>: é por lá que sai o resultado.</p>
+    <p class="challenge-note">Só participa do desafio quem está no nosso <a data-wpp href="#" target="_blank" rel="noopener">grupo do WhatsApp</a>. É por lá que a gente valida tudo.</p>
 
     <details class="challenge-archive">
       <summary>Desafios anteriores<span class="arrow">⌄</span></summary>
       <div class="challenge-archive-content">
-        <h3>Desafio de Agosto</h3>
+        <h3>Desafios de Setembro</h3>
+        <p class="page-sub" style="margin-bottom:16px">Os dois desafios de setembro já foram encerrados.</p>
+
+        <p class="challenge-status ended">Encerrado</p>
+        <h3 style="font-size:17px;margin-bottom:8px">A pele de quem eu amo</h3>
+        <p class="page-sub" style="margin-bottom:14px">Mostre o efeito do nosso <b>Sérum Lifting</b> em quem você ama e venda COM esses vídeos. O ranking soma as vendas geradas pelos seus vídeos com a hashtag.</p>
+
+        <p class="challenge-period">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+          18 a 30 de setembro
+          <span style="color:var(--ouro);font-weight:800;letter-spacing:.04em;">· estendido até 07/10</span>
+        </p>
+
+        <a class="challenge-poster" href="assets/desafio-pele.jpg" target="_blank" rel="noopener" aria-label="Abrir a arte do desafio A pele de quem eu amo em tamanho grande">
+          <img src="assets/desafio-pele.jpg" alt="Desafio A pele de quem eu amo, Le Moritz: ranking de vendas por vídeos com a hashtag #APeleDeQuemEuAmo, de 18 a 30 de setembro de 2026 (estendido até 07/10). Prêmios: 1º R$3.000, 2º R$2.000, 3º R$1.500, 4º R$1.000, 5º R$800." loading="lazy">
+        </a>
+
+        <p class="eyebrow" style="margin-top:26px">Como participar</p>
+        <p class="page-sub" style="margin-bottom:10px">Grave vídeos aplicando o Sérum Lifting em alguém mais velho (mãe, avó, sogra, tia, amiga 40+):</p>
+        <ul class="rules-list">
+          <li>Aplique só em um lado do rosto (antes e depois no mesmo vídeo).</li>
+          <li>Reação genuína, sem efeito e com boa luz.</li>
+          <li>Feche com um convite pra compra (seu link).</li>
+        </ul>
+
+        <p class="eyebrow" style="margin-top:22px">Como conta</p>
+        <p class="page-sub" style="margin-bottom:0">O ranking soma as vendas geradas pelos vídeos com a hashtag. Não é vender por fora: é vender COM os vídeos.</p>
+
+        <p class="eyebrow" style="margin-top:22px">Dica de ouro</p>
+        <p class="page-sub" style="margin-bottom:0">Grave com pessoas com bastante linhas de expressão: o efeito fica mais visível e vende mais.</p>
+
+        <p class="eyebrow" style="margin-top:22px">Regras</p>
+        <ul class="rules-list">
+          <li>Só vídeos de 18 a 30/09.</li>
+          <li>Sempre com <b>#APeleDeQuemEuAmo</b> (sem ela não vale).</li>
+          <li>Aplicar em outra pessoa, não em você.</li>
+          <li>Marque <b>@lemoritz</b> e use seu link.</li>
+          <li>Mínimo de 4 vídeos pra concorrer.</li>
+          <li>Empate no ranking: quem tiver mais vendas.</li>
+        </ul>
+
+        <p class="eyebrow" style="margin-top:22px">Prêmios de conteúdo <span style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--cinza-txt)">(todas concorrem)</span></p>
+        <ul class="rules-list">
+          <li>Melhor Transformação: R$ 500.</li>
+          <li>Vídeo Viral (+50 mil views): R$ 500.</li>
+        </ul>
+
+
+        <hr class="section-divider" style="margin:26px 0">
+
+        <p class="challenge-status ended">Encerrado</p>
+        <h3 style="font-size:17px;margin-bottom:8px">Foco em vendas</h3>
+        <p class="page-sub" style="margin-bottom:14px">O ranking é por quantidade de unidades vendidas: as <b>3 afiliadas que mais venderem</b> no período levam um kit completo Le Moritz (R$ 1.694 em produtos cada). Valem as vendas que vierem tanto de <b>vídeos</b> quanto de <b>lives</b>, desde que o conteúdo tenha sido produzido e tenha gerado a venda dentro do período do desafio.</p>
+
+        <p class="challenge-period">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+          14 a 30 de setembro de 2026
+        </p>
+
+        <a class="challenge-poster" href="assets/desafio-setembro.jpg" target="_blank" rel="noopener" aria-label="Abrir a arte do desafio Foco em vendas em tamanho grande">
+          <img src="assets/desafio-setembro.jpg" alt="Desafio de Setembro Le Moritz, foco em vendas: as 3 afiliadas que mais venderem de 14 a 30 de setembro de 2026 levam um kit completo, no valor de R$ 1.694 em produtos cada." loading="lazy">
+        </a>
+
+        <p class="eyebrow" style="margin-top:26px">Como funciona</p>
+        <ul class="rules-list">
+          <li>Ranking pela quantidade de unidades vendidas: vale qualquer produto.</li>
+          <li>Valem as vendas de vídeos e de lives, desde que o conteúdo tenha sido produzido de 14 a 30/09. Conteúdos antigos não entram.</li>
+          <li>A venda precisa estar paga e confirmada até 23h59 do dia 30/09.</li>
+          <li>Vendas canceladas ou devolvidas são descontadas do total.</li>
+          <li>Todas as afiliadas do grupo entram automaticamente, sem inscrição.</li>
+          <li>Apuração pelo painel oficial do TikTok Shop. Autocompra desclassifica.</li>
+        </ul>
+
+        <p class="challenge-note"><b>Empate?</b> Ganha quem vendeu mais sérum, nosso carro-chefe. Persistindo, quem chegou ao número primeiro.</p>
+
+        <h3 style="margin-top:28px">Desafio de Agosto</h3>
         <p class="challenge-period">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
           07 a 21 de agosto de 2026

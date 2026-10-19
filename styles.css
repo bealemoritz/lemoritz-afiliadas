@@ -636,6 +636,57 @@ a.btn-light { display: block; text-decoration: none; }
   background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, .16);
 }
 
+.challenge-status.ended { color: var(--cinza-txt); }
+.challenge-status.ended::before { background: #b9b3aa; box-shadow: 0 0 0 3px rgba(185, 179, 170, .22); }
+
+/* ---------- Black November Awards | fases (aba Desafio) ---------- */
+.black-phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 28px; }
+.black-phase {
+  display: flex; flex-direction: column; gap: 3px; padding: 11px 9px 10px;
+  background: #120a1a; color: #fff; border: 1px solid rgba(201, 168, 238, .5); border-radius: var(--radius-sm);
+  text-align: center; line-height: 1.2;
+}
+.black-phase small { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #c9a8ee; }
+.black-phase b { font-size: 13px; font-weight: 700; }
+.black-phase span { font-size: 12px; opacity: .8; }
+.black-phase i {
+  font-style: normal; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  margin-top: 4px; padding: 3px 0; border-radius: 999px; background: rgba(255, 255, 255, .1);
+}
+.black-phase.active { background: #c9a8ee; color: #1a0f26; border-color: #c9a8ee; }
+.black-phase.active small { color: #402A57; }
+.black-phase.active span { opacity: .85; }
+.black-phase.active i { background: #1a0f26; color: #fff; }
+
+/* ---------- Black November Awards | banner da Home ---------- */
+.black-banner {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; overflow: hidden;
+  padding: 18px 18px 16px; margin-bottom: 18px; border-radius: var(--radius); color: #fff;
+  background: radial-gradient(120% 140% at 100% 100%, #5a2a6e 0%, rgba(90, 42, 110, 0) 55%), linear-gradient(160deg, #07030b 0%, #1c0f2b 60%, #402A57 140%);
+  box-shadow: 0 8px 28px rgba(26, 15, 38, .35);
+  transition: transform .12s var(--ease);
+}
+.black-banner:active { transform: scale(.985); }
+.black-banner .bb-dates {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+  color: #c9a8ee; border: 1px solid rgba(201, 168, 238, .55); padding: 4px 10px; border-radius: 999px;
+}
+.black-banner .bb-title { font-size: 31px; line-height: 1.02; letter-spacing: -.03em; margin-top: 4px; }
+.black-banner .bb-title b { font-weight: 800; text-transform: uppercase; }
+.black-banner .bb-title em { font-family: var(--serif); font-style: italic; font-weight: 400; text-transform: uppercase; color: #c9a8ee; letter-spacing: -.02em; }
+.black-banner .bb-sub { font-size: 13.5px; line-height: 1.4; color: rgba(255, 255, 255, .85); }
+.black-banner .bb-sub b { color: #fff; font-weight: 700; }
+.black-banner .bb-steps { display: flex; align-items: center; gap: 5px; margin-top: 4px; }
+.black-banner .bb-steps i { width: 26px; height: 5px; border-radius: 3px; background: rgba(255, 255, 255, .22); }
+.black-banner .bb-steps i.on { background: #c9a8ee; }
+.black-banner .bb-steps small { font-size: 11px; font-weight: 600; margin-left: 5px; color: rgba(255, 255, 255, .75); }
+.black-banner .bb-cta {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
+  background: #c9a8ee; color: #1a0f26; font-size: 13.5px; font-weight: 700;
+  padding: 10px 16px; border-radius: 999px;
+}
+.black-banner .bb-cta svg { width: 15px; height: 15px; }
+
 /* ---------- Desafio | desafios anteriores ---------- */
 .challenge-archive { margin-top: 32px; border-top: 1px solid var(--borda); padding-top: 18px; }
 .challenge-archive summary {
