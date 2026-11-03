@@ -662,9 +662,9 @@ a.btn-light { display: block; text-decoration: none; }
 .black-phase.done i { background: transparent; border: 1px solid rgba(255, 255, 255, .25); }
 .black-banner .bb-steps i.done { background: rgba(201, 168, 238, .5); }
 
-/* Vídeo explicativo do desafio (Google Drive, vertical) */
+/* Vídeo explicativo do desafio (Google Drive, horizontal) */
 .challenge-video {
-  position: relative; width: 100%; max-width: 340px; margin: 4px auto 0; aspect-ratio: 9 / 16;
+  position: relative; width: 100%; margin: 4px 0 0; aspect-ratio: 16 / 9;
   border-radius: var(--radius); overflow: hidden; background: #120a1a;
   box-shadow: 0 8px 24px rgba(26, 15, 38, .18);
 }
