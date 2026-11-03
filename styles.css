@@ -658,6 +658,19 @@ a.btn-light { display: block; text-decoration: none; }
 .black-phase.active span { opacity: .85; }
 .black-phase.active i { background: #1a0f26; color: #fff; }
 
+.black-phase.done { opacity: .55; border-color: rgba(201, 168, 238, .25); }
+.black-phase.done i { background: transparent; border: 1px solid rgba(255, 255, 255, .25); }
+.black-banner .bb-steps i.done { background: rgba(201, 168, 238, .5); }
+
+/* Vídeo explicativo do desafio (Google Drive, vertical) */
+.challenge-video {
+  position: relative; width: 100%; max-width: 340px; margin: 4px auto 0; aspect-ratio: 9 / 16;
+  border-radius: var(--radius); overflow: hidden; background: #120a1a;
+  box-shadow: 0 8px 24px rgba(26, 15, 38, .18);
+}
+.challenge-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.challenge-video-link { display: block; text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--roxo); }
+
 /* ---------- Black November Awards | banner da Home ---------- */
 .black-banner {
   position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; overflow: hidden;
